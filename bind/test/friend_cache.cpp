@@ -15,3 +15,5 @@ const std::string& friend_cache::getKey()
     key = "d";
     return key;
 }
+
+KVO_STATIC_PROPERTY_IMPL(double, xxx, friend_cache)

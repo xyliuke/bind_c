@@ -20,6 +20,8 @@ public:
     
     KVO_PROPERTY(int, name, 注释)
     KVO_PROPERTY(double, age, 年龄)
+    
+    KVO_STATIC_PROPERTY_DEFINE(double, xxx, "")
 };
 
 #endif /* defined(__bind__friend_cache__) */

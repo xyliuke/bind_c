@@ -31,7 +31,12 @@
 
 int main(int argc, const char * argv[]) {
 
+    
+    std::cout << typeid(friend_cache).hash_code() << std::endl;
+    std::cout << typeid(friend_cache).hash_code() << std::endl;
+    
     friend_cache f;
+    std::cout << typeid(f).hash_code() << std::endl;
     f.set_name(9);
     std::function<void (const boost::any &, const boost::any &)> callback = [](const boost::any &old, const boost::any &newer)
     {
@@ -55,5 +60,21 @@ int main(int argc, const char * argv[]) {
     
     f.set_name(23);
     
+//    friend_cache::set_xxx(8.0);
+    
+    std::function<void (const boost::any &, const boost::any &)> callback_static = [](const boost::any &old, const boost::any &newer)
+    {
+        std::cout<<"callback static old:" << boost::any_cast<double>(old) << " new:" << boost::any_cast<double>(newer) << std::endl;
+    };
+//    friend_cache
+    bind::kvo::register_one_property(typeid(friend_cache).hash_code(), friend_cache::__xxx_keypath__(), callback_static);
+    friend_cache::set_xxx(90.3);
+    std::function<void (const boost::any &, const boost::any &)> callback_static1 = [](const boost::any &old, const boost::any &newer)
+    {
+        std::cout<<"callback static1 old:" << boost::any_cast<double>(old) << " new:" << boost::any_cast<double>(newer) << std::endl;
+    };
+    bind::kvo::register_one_property(typeid(friend_cache).hash_code(), friend_cache::__xxx_keypath__(), callback_static1);
+    
+    friend_cache::set_xxx(90.333);
     return 0;
 }
