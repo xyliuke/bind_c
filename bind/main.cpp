@@ -8,11 +8,7 @@
 
 #include <iostream>
 #include <glog/logging.h>
-#include "bindMgr.h"
-#include "./src/bindMgr.cpp"
 #include "friend_cache.h"
-
-std::shared_ptr<bind::BindMgr> s_1;
 
 #include <stdlib.h>
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F346FE51A7A11C4008B4A99 /* kvo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F346FE31A7A11C3008B4A99 /* kvo.cpp */; };
 		1F3AAA7E1A78BCF00023D06B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3AAA7D1A78BCF00023D06B /* main.cpp */; };
-		1F3AAA931A78C7270023D06B /* bindMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3AAA911A78C7270023D06B /* bindMgr.cpp */; };
 		1FA5996B1A80C41C0059923C /* boost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA5996A1A80C41C0059923C /* boost.framework */; };
 		1FA5996E1A80CB4D0059923C /* friend_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5996C1A80CB4D0059923C /* friend_cache.cpp */; };
 /* End PBXBuildFile section */
@@ -31,8 +30,6 @@
 		1F346FE41A7A11C3008B4A99 /* kvo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kvo.h; path = src/kvo.h; sourceTree = "<group>"; };
 		1F3AAA7A1A78BCF00023D06B /* bind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bind; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3AAA7D1A78BCF00023D06B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		1F3AAA911A78C7270023D06B /* bindMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bindMgr.cpp; path = src/bindMgr.cpp; sourceTree = "<group>"; };
-		1F3AAA921A78C7270023D06B /* bindMgr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = bindMgr.h; path = src/bindMgr.h; sourceTree = "<group>"; };
 		1FA5996A1A80C41C0059923C /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = boost.framework; sourceTree = "<group>"; };
 		1FA5996C1A80CB4D0059923C /* friend_cache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = friend_cache.cpp; path = test/friend_cache.cpp; sourceTree = "<group>"; };
 		1FA5996D1A80CB4D0059923C /* friend_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = friend_cache.h; path = test/friend_cache.h; sourceTree = "<group>"; };
@@ -89,8 +86,6 @@
 		1F3AAA901A78C6E60023D06B /* src */ = {
 			isa = PBXGroup;
 			children = (
-				1F3AAA911A78C7270023D06B /* bindMgr.cpp */,
-				1F3AAA921A78C7270023D06B /* bindMgr.h */,
 				1F346FE31A7A11C3008B4A99 /* kvo.cpp */,
 				1F346FE41A7A11C3008B4A99 /* kvo.h */,
 			);
@@ -156,7 +151,6 @@
 				1FA5996E1A80CB4D0059923C /* friend_cache.cpp in Sources */,
 				1F346FE51A7A11C4008B4A99 /* kvo.cpp in Sources */,
 				1F3AAA7E1A78BCF00023D06B /* main.cpp in Sources */,
-				1F3AAA931A78C7270023D06B /* bindMgr.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
