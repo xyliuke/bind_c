@@ -145,6 +145,11 @@ namespace bind {
         {
             kvo_->remove_register(tag);
         }
+        
+        static int register_one_property(std::type_info class_type, const std::string& keypath, std::function<void(const boost::any& old, const boost::any& newer)> callback)
+        {
+            return kvo::register_one_property(class_type.hash_code(), keypath, callback);
+        }
     protected:
         std::shared_ptr<kvo> kvo_;
     };

@@ -32,7 +32,7 @@
 int main(int argc, const char * argv[]) {
 
     
-    std::cout << typeid(friend_cache).hash_code() << std::endl;
+    std::cout << typeid(bind::base_cache).hash_code() << std::endl;
     std::cout << typeid(friend_cache).hash_code() << std::endl;
     
     friend_cache f;
